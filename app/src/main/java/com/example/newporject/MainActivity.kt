@@ -1,12 +1,9 @@
-package com.example.newporject
+package com.example.FirstApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioGroup
-import android.widget.TextView
-import com.example.newproject.R
+import android.widget.*
+import com.example.FirstApp.R
 import kotlinx.android.synthetic.main.activity_main.view.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,13 +11,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-/*
+
         val ed_name = findViewById<EditText>(R.id.username)
         val tv_text = findViewById<TextView>(R.id.name)
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
-        val btn_scissor = findViewById<Button>(R.id.btn_scissor)
-        val btn_stone = findViewById<Button>(R.id.btn_stone)
-        val btn_paper = findViewById<Button>(R.id.btn_paper)
+        val btn_scissor = findViewById<RadioButton>(R.id.btn_scissor)
+        val btn_stone = findViewById<RadioButton>(R.id.btn_stone)
+        val btn_paper = findViewById<RadioButton>(R.id.btn_paper)
         val btn_result = findViewById<Button>(R.id.bnt_result)
         val tv_name = findViewById<TextView>(R.id.text_name)
         val tv_winner = findViewById<TextView>(R.id.text_winner)
@@ -48,11 +45,11 @@ class MainActivity : AppCompatActivity() {
                     tv_text.text = "電腦獲勝了"
                 }
                 else -> {
-                    tv_winner.text = "勝利者\n平手1"
+                    tv_winner.text = "勝利者\n平手"
                     tv_text.text = "平局，請再試一次"
+                    }
                 }
             }
         }
-            }*/
-        }
     }
+}
